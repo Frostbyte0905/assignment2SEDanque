@@ -1,0 +1,43 @@
+Date of Git Lab Tutorials: 2025-02-27
+Date GitHub Account was Set Up: ~2023-06-24
+
+1. Console output from step 3.c: On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+2. Total Commits: 9
+git rev-list --count HEAD
+
+3.Last modification date of README.md:
+Fri Feb 28 16:44:47 2025 -0500
+git log -1 --format=%cd -- README.md
+
+4.Two reasons for using branches:
+Allows parallel development
+Helps manage feature releases without affecting main code
+
+5.Difference between `git log` and `git status`:
+`git log`: Shows commit history.
+`git status`: Shows current file changes.
+
+6.Command to see commits modifying `Vehicle.h`:
+git log --oneline -- Vehicle.h
+
+7. Command to find commits with "file" in message:
+git log --grep="file"
+
+8. Object-Oriented Programming:
+Inheritance: A class derives from another class.
+Polymorphism: One function, multiple implementations.
+Encapsulation: Restricts direct access to class internals.
+
+9. Difference Between “Dictator and Lieutenants” Workflow and “Integration Manager” Workflow
+Integration Manager Workflow: Developers push to their own public repositories and pull from the central repository. A single integration manager reviews and merges changes.
+Dictator and Lieutenants Workflow: Developers push to lieutenant repositories. Lieutenants handle merges for groups of developers before sending the final changes to the dictator, 
+who integrates everything into the central repository.
+
+10. Why "Dictator and Lieutenants" is Better for a Large Team
+Scales better for large teams by distributing responsibilities.
+Reduces bottlenecks, as lieutenants handle merging before the dictator integrates final changes.
+Minimizes conflicts by having structured merge points instead of everyone pushing to a single repository.
